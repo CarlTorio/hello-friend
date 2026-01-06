@@ -257,6 +257,16 @@
   .border-glow:hover::before {
     @apply opacity-100;
   }
+
+  .glow-effect {
+    @apply relative overflow-hidden transition-all duration-300;
+    box-shadow: 0 0 20px hsl(217 91% 60% / 0.3);
+  }
+
+  .glow-effect:hover {
+    box-shadow: 0 0 40px hsl(217 91% 60% / 0.5), 0 0 60px hsl(199 89% 48% / 0.2);
+    transform: translateY(-2px);
+  }
 }
 
 @layer utilities {
